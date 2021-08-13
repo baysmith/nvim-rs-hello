@@ -1,0 +1,10 @@
+refresh_rate = "30 seconds"
+
+[appenders.file]
+kind = "file"
+path = "$ENV{HELLO_PLUGIN_DIR}/nvim-rs-hello.log"
+encoder.pattern = "{d} [{l}] {M}:{m}{n}"
+
+[root]
+level = "debug"
+appenders = [ "file" ]
