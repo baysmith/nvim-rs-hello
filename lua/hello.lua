@@ -28,6 +28,9 @@ function M.stop()
     _t.job_id = nil
 end
 
+function M.plugin_dir()
+    return plugin_dir
+end
 
 setmetatable(M, {
     __index = function(t, k)
